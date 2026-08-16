@@ -14,6 +14,28 @@
         ],
         "skills": ["Product Management", "PoPM SAFe 6", "Data Analysys & Viz", "Figma", "React", "Jira", "Confluence"]
     },
+    "ngn2-research" : {
+        "title": "Research: Knight Lab Studio",
+        "description": [
+            "Research done with the Knight Lab Studio to explore the way Gen Z interacts with Digital News platforms. Using complex Network Analysis, machine learning, and natural language processing, I analyzed qualitative data from interviews across 5 countries to find trends in news interactions and create user personas. This research involved using sentence-transformers, HuggingFace models, UMAP, and HDBSCAN to analyze the data and create visualizations of the results. The final findings and visualizations were presented to the Knight Lab Studio and used to inform their future research paper for the Harvard Data Science Review."
+        ],
+        "thumbnail": "/vectors/no-image.svg",
+        "project_images": [
+            "/vectors/no-image.svg"
+        ],
+        "skills": ["Data Analysis", "Machine Learning", "Data Visualization", "Network Analysis", "Clustering", "Natural Language Processing", "Python"]
+    },
+    "task_manager" : {
+        "title": "Theater Company Task Manager",
+        "description": [
+            "A work in progress: Creating a task management system for Adams Theater Company to manage deadlines, responsibilities for various team members and projects, and budgets. The system features task status tracking, budget and purchase tracking, a grant-finding web-scraper and a social media analytics dashboard. The project is designed to suit 1-10 users without a technical background, so the focus is on functionality and an intuitive UI."
+        ],
+        "thumbnail": "/vectors/no-image.svg",
+        "project_images": [
+            "/vectors/no-image.svg"
+        ],
+        "skills": ["Product Management", "Python", "React", "Figma", "Algorithms"]
+    },
     "diamond_bid_creator" : {
         "title" : "Diamond Bid Creator",
         "description" : [
@@ -39,17 +61,6 @@
             "/images/ATC-Website.webp"
         ],
         "skills" : ["Web Design"]
-    },
-    "task_manager" : {
-        "title": "Task Manager App",
-        "description": [
-            "A work in progress currently, the Non-Profit Task Manager app was created to track and manage deadlines, budget and purchase tracking, social tracking, and AI-marketing tools. Created for my non-profit organization Adams Theatre Company, I am prioritizing building features that would help to keep us organized and speed up our current tasks that create bottlenecks in our process."
-        ],
-        "thumbnail": "/vectors/no-image.svg",
-        "project_images": [
-            "/vectors/no-image.svg"
-        ],
-        "skills": ["Product Management", "Python", "React", "Figma", "Algorithms"]
     },
     "interactive_data_viz" : {
         "title": "Interactive Data Viz",

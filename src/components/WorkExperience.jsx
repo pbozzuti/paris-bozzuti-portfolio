@@ -11,6 +11,12 @@ const WorkExperience = () => {
             dates : "6.2025 - 8.2025",
         },
         {
+            icon : "/images/knightlab.png",
+            alt : "Knight Lab Studio Logo",
+            title : "Researcher",
+            dates : "1.2026 - 3.2026",
+        },
+        {
             icon : "/images/novartis.png",
             alt : "Novartis Logo",
             title : "Content Lab Intern",
@@ -26,7 +32,7 @@ const WorkExperience = () => {
             icon : "/images/northwestern.png",
             alt : "Northwestern Medill Logo",
             title : "Integrated Marketing Assistant",
-            dates : "9.2022 - Present",
+            dates : "9.2022 - 3.2026",
         },
     ]
 

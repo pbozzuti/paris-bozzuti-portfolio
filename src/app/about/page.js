@@ -15,7 +15,7 @@ const page = () => {
 
 
             <p className='text-[1.4rem]'>
-                Hello! I&apos;m Paris, a senior at Northwestern, born in New Jersey.
+                Hello! I&apos;m Paris, a recent Northwestern graduate, born in New Jersey.
             </p>
 
             <p className='text-[1.4rem]'>

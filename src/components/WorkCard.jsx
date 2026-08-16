@@ -2,7 +2,7 @@ import React from 'react'
 
 const WorkCard = ({work}) => {
   return (
-    <div className='relative w-[80%] h-[10vh] md:w-[20dvw] md:min-h-[150px] md:h-[15vh] lg:h-[30vh] lg:max-h-[200px] overflow-hidden flex flex-col items-center px-[4%] py-[1%] border border-gray-200 bg-gray-100 rounded-lg shadow-lg'>
+    <div className='relative w-[80%] h-[10vh] md:w-[18%] md:min-h-[150px] md:h-[15vh] lg:h-[30vh] lg:max-h-[200px] overflow-hidden flex flex-col items-center px-[4%] py-[1%] border border-gray-200 bg-gray-100 rounded-lg shadow-lg'>
 
         <div className='flex flex-col items-center justify-center w-full max-h-[30%]'>
             <img src={work.icon} alt={work.alt} className="h-full object-contain" />
