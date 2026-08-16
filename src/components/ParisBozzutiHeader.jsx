@@ -22,7 +22,7 @@ const ParisBozzutiHeader = () => {
 
 
             <p className='text-[1.7rem]'>
-              a senior at Northwestern, studying Data Science and Radio/Television/Film.
+              recent Northwestern graduate in Data Science and Radio/Television/Film.
             </p>
 
             <hr className='w-[75px] border-2 m-0 block mt-4 mb-8' />
@@ -34,7 +34,7 @@ const ParisBozzutiHeader = () => {
         </section>
 
         <p className='block lg:hidden text-center text-[1.1rem] md:text-[1.9rem]'>
-            Senior at Northwestern University studying Data Science and Radio/Television/Film.
+            Recent Northwestern graduate in Data Science and Radio/Television/Film.
         </p>
 
         <div className='paris-bozutti-headshot w-[80dvw] h-[80dvw] md:w-auto md:h-auto rounded-xl lg:rounded-none lg:w-[24dvw] lg:h-auto lg:max-w-1/3'
