@@ -13,7 +13,7 @@ const WorkExperience = () => {
         {
             icon : "/images/knightlab.png",
             alt : "Knight Lab Studio Logo",
-            title : "Researcher",
+            title : "Student Researcher",
             dates : "1.2026 - 3.2026",
         },
         {

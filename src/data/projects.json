@@ -14,18 +14,6 @@
         ],
         "skills": ["Product Management", "PoPM SAFe 6", "Data Analysys & Viz", "Figma", "React", "Jira", "Confluence", "APIs"]
     },
-    "ngn2-research" : {
-        "title": "Research: Knight Lab Studio",
-        "description": [
-            "Research done with the Knight Lab Studio to explore the way Gen Z interacts with Digital News platforms. Using complex Network Analysis, machine learning, and natural language processing, I analyzed qualitative data from interviews across 5 countries to find trends in news interactions and create user personas. This research involved using sentence-transformers, HuggingFace models, UMAP, and HDBSCAN to analyze the data and create visualizations of the results. The final findings and visualizations were presented to the Knight Lab Studio and used to inform their future research paper for the Harvard Data Science Review."
-        ],
-        "thumbnail": "/images/umap_clusters.png",
-        "project_images": [
-            "/images/knight-lab-viz1.html",
-            "/images/knight-lab-viz2.html"
-        ],
-        "skills": ["Data Analysis", "Machine Learning", "Data Visualization", "Network Analysis", "Clustering", "Natural Language Processing", "Python"]
-    },
     "task_manager" : {
         "title": "Theater Company Task Manager",
         "description": [
@@ -104,5 +92,17 @@
             "/images/Interactive-Data-Viz.png"
         ],
         "skills": ["R", "SQL", "Data Analysys & Viz"]
+    },
+    "ngn2-research" : {
+        "title": "Research: Knight Lab Studio",
+        "description": [
+            "Research done with the Knight Lab Studio to explore the way Gen Z interacts with Digital News platforms. Using complex Network Analysis, machine learning, and natural language processing, I analyzed qualitative data from interviews across 5 countries to find trends in news interactions and create user personas. This research involved using sentence-transformers, HuggingFace models, UMAP, and HDBSCAN to analyze the data and create visualizations of the results. The final findings and visualizations were presented to the Knight Lab Studio and used to inform their future research paper for the Harvard Data Science Review."
+        ],
+        "thumbnail": "/images/umap_clusters.png",
+        "project_images": [
+            "/images/knight-lab-viz1.html",
+            "/images/knight-lab-viz2.html"
+        ],
+        "skills": ["Data Analysis", "Machine Learning", "Data Visualization", "Network Analysis", "Clustering", "Natural Language Processing", "Python"]
     }
 }

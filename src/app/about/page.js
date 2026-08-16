@@ -47,7 +47,7 @@ const page = () => {
             </p>
 
             <section className='images flex w-full h-[15dvh] justify-between md:h-[23dvh] md:justify-center md:gap-8 lg:flex-col lg:h-[90%] lg:w-[24dvw] lg:gap-5 lg:justify-between'>
-                <img className='h-full object-fit lg:w-full shadow-lg rounded-lg' src="images/paris-headshot.png" alt="Paris Bozzuti Headshot" />
+                <img className='h-full object-fit lg:w-full shadow-lg rounded-lg' src="images/Paris-headshot-2.png" alt="Paris Bozzuti Headshot" />
 
                 <img className='h-full object-fit lg:w-full shadow-lg rounded-lg' src="images/bozzuti-in-action.png" alt="Paris Bozzuti working hard with her team" />
             </section>

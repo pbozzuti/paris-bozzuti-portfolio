@@ -10,7 +10,7 @@ const page = () => {
         },
         {
             title : "Email",
-            url : "mailto:parisbozzuti2026@u.northwestern.edu",
+            url : "mailto:pbozzuti@gmail.com",
             icon : "/vectors/email.svg"
 
         },
