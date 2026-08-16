@@ -1,5 +1,6 @@
 import HomeSkills from "../components/HomeSkills";
 import ParisBozzutiHeader from "../components/ParisBozzutiHeader";
+import LastCommit from "../components/LastCommit";
 
 
 export default function Home() {
@@ -8,8 +9,11 @@ export default function Home() {
 
       <ParisBozzutiHeader />
 
+
       <HomeSkills />
+
       
+      <LastCommit />
       
     </main>
   );

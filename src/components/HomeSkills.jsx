@@ -24,7 +24,9 @@ const HomeSkills = () => {
     // const skills = [
 
     //     "Product Management",
-    //     "Data Analysis & Viz",
+    //     "Data Analysis",
+    //     "Data Visualization",
+    //     "Machine Learning",
     //     "Python",
     //     "React",
     //     "SQL",
@@ -39,7 +41,7 @@ const HomeSkills = () => {
     const skills = Array.from(getSkills());
 
   return (
-    <section className='home-skills-section w-full flex flex-col items-center px-[5%] mt-12 lg:mt-0 mb-24'>
+    <section className='home-skills-section w-full flex flex-col items-center px-[5%] mt-6 lg:mt-0 mb-12'>
 
         <h3 className='font-antique w-full text-center !text-[1.3rem] md:!text-[2.2rem] lg:text-left lg:!text-[1.7rem] mb-8'>Skills and Certifications</h3>
 
