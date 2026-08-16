@@ -42,11 +42,15 @@ const LastCommit = async () => {
         <a
             href={commit.url}
             target="_blank"
-            className='w-full max-w-[500px] px-6 py-4 bg-gray-100 border border-gray-200 rounded-lg shadow-lg flex flex-col gap-1 hover:scale-[1.02] transition-all duration-200 ease-in'
+            className='w-full max-w-[500px] px-6 py-4 bg-gray-100 border border-gray-200 rounded-lg shadow-lg flex items-center gap-4 hover:scale-[1.02] transition-all duration-200 ease-in'
         >
-            <p className='!font-[600] !text-[1.0rem] !m-0'>What I've been working on:</p>
-            <p className='!font-[600]  text-gray-500 !text-[1.0rem] !m-0'>{commit.repo}</p>
-            <p className='!text-[0.85rem] text-gray-500 !m-0'>{commit.message} · {new Date(commit.date).toLocaleDateString()} · {new Date(commit.date).toLocaleTimeString()}</p>
+            <img className='h-[2.5rem] flex-none' src="/vectors/github.svg" alt="GitHub" />
+
+            <div className='flex flex-col gap-1'>
+                <p className='!font-[600] !text-[1.0rem] !m-0'>What I've been working on:</p>
+                <p className='!font-[600]  text-gray-500 !text-[1.0rem] !m-0'>{commit.repo}</p>
+                <p className='!text-[0.85rem] text-gray-500 !m-0'>{commit.message} · {new Date(commit.date).toLocaleDateString()} · {new Date(commit.date).toLocaleTimeString()}</p>
+            </div>
         </a>
     )
 }
