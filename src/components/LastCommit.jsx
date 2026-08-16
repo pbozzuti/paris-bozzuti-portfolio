@@ -5,7 +5,7 @@ const GITHUB_USERNAME = "pbozzuti";
 async function getLastCommit() {
     const eventsRes = await fetch(`https://api.github.com/users/${GITHUB_USERNAME}/events/public`, {
         headers: { Accept: "application/vnd.github+json" },
-        next: { revalidate: 3600 },
+        next: { revalidate: 300 },
     });
 
     if (!eventsRes.ok) return null;
