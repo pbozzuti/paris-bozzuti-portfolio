@@ -15,7 +15,7 @@ const page = () => {
 
 
             <p className='text-[1.4rem]'>
-                Hello! I&apos;m Paris, a recent Northwestern graduate, born in New Jersey.
+                Hello! I&apos;m Paris, a recent Northwestern graduate born in New Jersey.
             </p>
 
             <p className='text-[1.4rem]'>
@@ -43,7 +43,7 @@ const page = () => {
         <div className='flex flex-col gap-6 w-full lg:hidden'>
 
             <p className='text-[1.1rem] md:text-[1.9rem] text-center !mb-0'>
-                    Hello! I&apos;m Paris, a senior at Northwestern, born in New Jersey.
+                    Hello! I&apos;m Paris, a recent Northwestern graduate born in New Jersey.
             </p>
 
             <section className='images flex w-full h-[15dvh] justify-between md:h-[23dvh] md:justify-center md:gap-8 lg:flex-col lg:h-[90%] lg:w-[24dvw] lg:gap-5 lg:justify-between'>

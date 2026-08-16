@@ -11,7 +11,7 @@ const Footer = () => {
 
 
         <p className='!p-0 !m-0 '>
-            &copy; <strong>Paris Bozzuti</strong>, 2025
+            &copy; <strong>Paris Bozzuti</strong>, 2026
         </p>
 
 

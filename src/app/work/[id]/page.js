@@ -3,6 +3,12 @@ import React from 'react'
 import projects from "@/data/projects.json"
 import { notFound } from 'next/navigation';
 import IndividualSkill from '@/components/IndividualSkill';
+import ScaledEmbed from '@/components/ScaledEmbed';
+
+const EMBED_NATIVE_SIZE = {
+    "/images/knight-lab-viz1.html": { width: 850, height: 750 },
+    "/images/knight-lab-viz2.html": { width: 1100, height: 750 },
+};
 
 export async function generateStaticParams() {
     return Object.keys(projects).map((id) => ({id}));
@@ -68,14 +74,28 @@ export default async function page({params}) {
 
             {/* for now -- hard code 3 versions for the 3 possible number of images  */}
 
-            {project.project_images.length === 1 ?
-                
-                <div className='flex justify-center items-center w-[35%] overflow-hidden'>
+            {project.project_images.every(im => im.endsWith('.html')) ?
+
+                <div className='flex flex-col gap-6 justify-center w-[45%] min-w-0'>
                     {
                         project.project_images.map((im, i) => (
-                            <img className='object-contain' src={im} alt={`${project.title} Image`} key={i} />
+                            <ScaledEmbed
+                                key={i}
+                                src={im}
+                                title={`${project.title} Interactive Visualization ${i + 1}`}
+                                nativeWidth={EMBED_NATIVE_SIZE[im]?.width ?? 850}
+                                nativeHeight={EMBED_NATIVE_SIZE[im]?.height ?? 750}
+                            />
                         ))
                     }
+                </div>
+
+                :
+
+            project.project_images.length === 1 ?
+
+                <div className='flex justify-center items-center w-[35%] overflow-hidden'>
+                    <img className='object-contain' src={project.project_images[0]} alt={`${project.title} Image`} />
                 </div>
 
                 :
@@ -110,15 +130,33 @@ export default async function page({params}) {
 
         {/* mobile and tablet version ig  */}
 
-        <section className='flex flex-col items-center gap-8 lg:hidden'>
+        <section className='flex flex-col items-center gap-8 lg:hidden w-full min-w-0'>
 
             <h1 className='font-antique text-center !text-[2.5rem] md:!text-[3rem]'>
                 {project.title}
             </h1>
 
             {/* again, for now, just hard coding num pics  */}
-            {project.project_images.length <= 1 ?
-                
+            {project.project_images.every(im => im.endsWith('.html')) ?
+
+                <div className='flex flex-col gap-4 w-full min-w-0'>
+                    {
+                        project.project_images.map((im, i) => (
+                            <ScaledEmbed
+                                key={i}
+                                src={im}
+                                title={`${project.title} Interactive Visualization ${i + 1}`}
+                                nativeWidth={EMBED_NATIVE_SIZE[im]?.width ?? 850}
+                                nativeHeight={EMBED_NATIVE_SIZE[im]?.height ?? 750}
+                            />
+                        ))
+                    }
+                </div>
+
+                :
+
+            project.project_images.length <= 1 ?
+
                 <div className='flex justify-center items-center w-full max-h-[30vh] md:max-h-[40vh] overflow-hidden'>
                     {
                         project.project_images.map((im, i) => (
@@ -212,7 +250,7 @@ export default async function page({params}) {
         </section>
 
 
-      
+
     </main>
   )
 }
