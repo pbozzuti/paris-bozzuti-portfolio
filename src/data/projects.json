@@ -12,7 +12,7 @@
             "/images/Battery-App-2.png",
             "/images/Battery-App.png"
         ],
-        "skills": ["Product Management", "PoPM SAFe 6", "Data Analysys & Viz", "Figma", "React", "Jira", "Confluence"]
+        "skills": ["Product Management", "PoPM SAFe 6", "Data Analysys & Viz", "Figma", "React", "Jira", "Confluence", "APIs"]
     },
     "ngn2-research" : {
         "title": "Research: Knight Lab Studio",
@@ -29,13 +29,42 @@
     "task_manager" : {
         "title": "Theater Company Task Manager",
         "description": [
+            "https://github.com/pbozzuti/Project-Manager",
             "A work in progress: Creating a task management system for Adams Theater Company to manage deadlines, responsibilities for various team members and projects, and budgets. The system features task status tracking, budget and purchase tracking, a grant-finding web-scraper and a social media analytics dashboard. The project is designed to suit 1-10 users without a technical background, so the focus is on functionality and an intuitive UI."
         ],
-        "thumbnail": "/vectors/no-image.svg",
+        "thumbnail": "/images/task1.png",
         "project_images": [
-            "/vectors/no-image.svg"
+            "/images/task1.png",
+            "/images/task2.png"
         ],
-        "skills": ["Product Management", "Python", "React", "Figma", "Algorithms"]
+        "skills": ["Product Management", "Python", "React", "Figma", "APIs"]
+    },
+    "med-imaging" : {
+        "title": "Deep Learning Medical Imaging Prediction",
+        "description": [
+            "https://github.com/arvindkrishna87/STAT390_Winter2026/tree/master/Team5",
+            "Working with real healthcare stakeholders, I developed deep learning models to identify the severity of potential eye cancer through analysis of medical imaging stains. My particular focus area was utilizing Optuna Hyperparameter Tuning to optimize the model's performance and speed. This involved the optimization of the entire end-to-end data pipeline and training process, as well as creating performance analysis visualizations to identify bottlenecks and areas for improvement. Over the course of ten weeks, I completed five presentations regarding the progress of the research and recommendations for stakeholders."
+        ],
+        "thumbnail": "/images/med-img2.png",
+        "project_images": [
+            "/images/med-img1.html",
+            "/images/med-img2.png"
+        ],
+        "skills": ["Python", "Machine Learning", "Computer Vision", "Data Analysis", "Hyperparameter Tuning", "Deep Learning"]
+    },
+    "ai-classifier" : {
+        "title": "AI-Generated Image Classifier",
+        "description": [
+            "https://github.com/pbozzuti/stat362-fa25-final-ai-image-detection/tree/main",
+            "I created an end-to-end data pipeline with Python to classify over 80,000 images as either AI or human-generated with 97% accuracy. I utilized various machine learning algorithms to achieve this performance and created visualizations to communicate findings and improve the model performance. In less technical terms, I trained a model on thousands of images to learn what qualities in each layer of an image can identify if it was human-generated or AI-generated. The technical specifics of the model isa MobileNetV2 CNN (a lightweight but effective convolutional neural network) with L2 regularization, Batch Normalization, Dropout, and an Adam Optimizer."
+        ],
+        "thumbnail": "/images/img-class3.png",
+        "project_images": [
+            "/images/img-class1.png",
+            "/images/img-class2.png",
+            "/images/img-class3.png"
+        ],
+        "skills": ["Python", "Machine Learning", "Computer Vision", "Data Analysis", "Neural Networks"]
     },
     "diamond_bid_creator" : {
         "title" : "Diamond Bid Creator",

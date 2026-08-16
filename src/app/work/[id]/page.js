@@ -4,11 +4,23 @@ import projects from "@/data/projects.json"
 import { notFound } from 'next/navigation';
 import IndividualSkill from '@/components/IndividualSkill';
 import ScaledEmbed from '@/components/ScaledEmbed';
+import ResponsiveEmbed from '@/components/ResponsiveEmbed';
 
 const EMBED_NATIVE_SIZE = {
     "/images/knight-lab-viz1.html": { width: 850, height: 750 },
     "/images/knight-lab-viz2.html": { width: 1100, height: 750 },
 };
+
+function renderProjectMedia(im, i, title) {
+    if (im.endsWith('.html')) {
+        const nativeSize = EMBED_NATIVE_SIZE[im];
+        const embedTitle = `${title} Interactive Visualization ${i + 1}`;
+        return nativeSize
+            ? <ScaledEmbed key={i} src={im} title={embedTitle} nativeWidth={nativeSize.width} nativeHeight={nativeSize.height} />
+            : <ResponsiveEmbed key={i} src={im} title={embedTitle} />;
+    }
+    return <img key={i} className='object-contain' src={im} alt={`${title} Image`} />;
+}
 
 export async function generateStaticParams() {
     return Object.keys(projects).map((id) => ({id}));
@@ -74,19 +86,11 @@ export default async function page({params}) {
 
             {/* for now -- hard code 3 versions for the 3 possible number of images  */}
 
-            {project.project_images.every(im => im.endsWith('.html')) ?
+            {project.project_images.some(im => im.endsWith('.html')) ?
 
                 <div className='flex flex-col gap-6 justify-center w-[45%] min-w-0'>
                     {
-                        project.project_images.map((im, i) => (
-                            <ScaledEmbed
-                                key={i}
-                                src={im}
-                                title={`${project.title} Interactive Visualization ${i + 1}`}
-                                nativeWidth={EMBED_NATIVE_SIZE[im]?.width ?? 850}
-                                nativeHeight={EMBED_NATIVE_SIZE[im]?.height ?? 750}
-                            />
-                        ))
+                        project.project_images.map((im, i) => renderProjectMedia(im, i, project.title))
                     }
                 </div>
 
@@ -137,19 +141,11 @@ export default async function page({params}) {
             </h1>
 
             {/* again, for now, just hard coding num pics  */}
-            {project.project_images.every(im => im.endsWith('.html')) ?
+            {project.project_images.some(im => im.endsWith('.html')) ?
 
                 <div className='flex flex-col gap-4 w-full min-w-0'>
                     {
-                        project.project_images.map((im, i) => (
-                            <ScaledEmbed
-                                key={i}
-                                src={im}
-                                title={`${project.title} Interactive Visualization ${i + 1}`}
-                                nativeWidth={EMBED_NATIVE_SIZE[im]?.width ?? 850}
-                                nativeHeight={EMBED_NATIVE_SIZE[im]?.height ?? 750}
-                            />
-                        ))
+                        project.project_images.map((im, i) => renderProjectMedia(im, i, project.title))
                     }
                 </div>
 
