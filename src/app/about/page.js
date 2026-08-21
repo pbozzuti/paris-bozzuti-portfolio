@@ -42,7 +42,7 @@ const page = () => {
 
         <div className='flex flex-col gap-6 w-full lg:hidden'>
 
-            <p className='text-[1.1rem] md:text-[1.9rem] text-center !mb-0'>1
+            <p className='text-[1.1rem] md:text-[1.9rem] text-center !mb-0'>
                     Hello! I&apos;m Paris, a recent Northwestern graduate born in New Jersey.
             </p>
 
