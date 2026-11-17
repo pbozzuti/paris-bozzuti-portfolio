@@ -4,7 +4,10 @@ const GITHUB_USERNAME = "pbozzuti";
 
 async function getLastCommit() {
     const eventsRes = await fetch(`https://api.github.com/users/${GITHUB_USERNAME}/events/public`, {
-        headers: { Accept: "application/vnd.github+json" },
+        headers: {
+            Accept: "application/vnd.github+json",
+            Authorization: `Bearer ${process.env.GITHUB_TOKEN}`
+        },
         next: { revalidate: 300 },
     });
 
@@ -17,7 +20,13 @@ async function getLastCommit() {
 
     const commitRes = await fetch(
         `https://api.github.com/repos/${pushEvent.repo.name}/commits/${pushEvent.payload.head}`,
-        { headers: { Accept: "application/vnd.github+json" }, next: { revalidate: 3600 } }
+        {
+            headers: {
+                Accept: "application/vnd.github+json",
+                Authorization: `Bearer ${process.env.GITHUB_TOKEN}`
+            },
+            next: { revalidate: 3600 }
+        }
     );
 
     if (!commitRes.ok) return null;

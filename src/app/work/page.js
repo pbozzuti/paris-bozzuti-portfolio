@@ -11,20 +11,20 @@ const page = () => {
 
         {/* WORK EXPERIENCE */}
 
-        <h1 className='font-antique !text-[2.5rem] md:!text-[3rem] lg:!text-[4rem] text-center lg:text-left mb-[5%] lg:mb-0'>
+        <h1 className='font-antique !text-[2.5rem] md:!text-[3rem] lg:!text-[2.5rem] text-center lg:text-left mb-[5%] lg:mb-0'>
             Work Experience
         </h1>
-        <hr className='hidden lg:block w-[75px] border-2 m-0 block mt-4 mb-8' />
+        <hr className='hidden lg:block w-[75px] border-1 m-0 block mt-4 mb-8' />
         <WorkExperience />
 
 
 
         {/* PROJECTS  */}
 
-        <h1 className='font-antique !text-[2.5rem] md:!text-[3rem] lg:!text-[4rem] text-center lg:text-left mt-[5%] lg:mt-0'>
+        <h1 className='font-antique !text-[2.5rem] md:!text-[3rem] lg:!text-[2.5rem] text-center lg:text-left mt-[5%] lg:mt-0'>
             Projects
         </h1>
-        <hr className='hidden lg:block w-[75px] border-2 m-0 block mt-4 mb-8' />
+        <hr className='hidden lg:block w-[75px] border-1 m-0 block mt-4 mb-8' />
         <Projects />
 
       

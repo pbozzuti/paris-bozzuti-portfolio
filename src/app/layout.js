@@ -1,21 +1,26 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import Navbar from "../components/Navbar";
 import "./globals.css";
-import { Zen_Antique } from "next/font/google";
-import { Manrope } from "next/font/google";
 import Footer from "@/components/Footer";
 
-const manrope = Manrope({
-  weight: ['200', '300', '400', '500', '600', '700', '800'],
-  subsets: ['latin'],
-  variable: '--font-manrope'
+// Body font: Satoshi (variable, weights 300–900)
+const satoshi = localFont({
+  src: [
+    { path: './fonts/Satoshi-Variable.woff2', weight: '300 900', style: 'normal' },
+    { path: './fonts/Satoshi-VariableItalic.woff2', weight: '300 900', style: 'italic' },
+  ],
+  variable: '--font-manrope',
+  display: 'swap',
 });
 
-const zen_antique = Zen_Antique({
-  weight : ['400'],
-  subsets : ['latin'],
-  variable : '--font-antique'
-})
+// Heading font: Gambarino (regular only)
+const gambarino = localFont({
+  src: './fonts/Gambarino-Regular.woff2',
+  weight: '400',
+  style: 'normal',
+  variable: '--font-antique',
+  display: 'swap',
+});
 
 export const metadata = {
   title: "Paris Bozzuti",
@@ -29,7 +34,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${manrope.variable} ${zen_antique.variable} antialiased`}
+        className={`${satoshi.variable} ${gambarino.variable} antialiased`}
       >
         <Navbar />
         {children}

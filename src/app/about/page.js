@@ -7,26 +7,26 @@ const page = () => {
         {/* the main container -- row for desktop, col for mobile */}
 
         <section className='about-me-copy h-full hidden lg:flex flex-col w-1/2'>
-            <h1 className='font-antique !text-[5.5rem]'>
+            <h1 className='font-antique !text-[3rem]'>
                 About Me
             </h1>
 
-            <hr className='w-[75px] border-2 m-0 block mt-4 mb-8' />
+            <hr className='w-[75px] border-1 m-0 block mt-4 mb-8' />
 
 
-            <p className='text-[1.4rem]'>
-                Hello! I&apos;m Paris, a recent Northwestern graduate born in New Jersey.
+            <p className='text-[1.2rem]'>
+                I&apos;m Paris, a recent Northwestern graduate born in New Jersey.
             </p>
 
-            <p className='text-[1.4rem]'>
+            <p className='text-[1.2rem]'>
                 My background is in technical product management and marketing, which  has given me an entrepreneurial spirit, a strong statistical foundation, and a keen eye for storytelling. All in all, I am a problem solver who uses both creative and technical skills to build innovative business solutions. I work best in teams, bringing leadership skills to build a project with others.
             </p>
 
-            <p className='text-[1.4rem]'>
+            <p className='text-[1.2rem]'>
                 Outside of work, I am a co-founder of a non-profit theatre company, a huge Mets fan, and an amateur robotics enthusiast. I spend my free time playing guitar and watching Vanderpump Rules.
             </p>
 
-            <hr className='w-[75px] border-2 m-0 block mt-4 mb-8' />
+            <hr className='w-[75px] border-1 m-0 block mt-4 mb-8' />
 
 
             {/* SPOTIFY COMONENT HERE */}

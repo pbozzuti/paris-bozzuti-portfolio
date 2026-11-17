@@ -9,7 +9,7 @@ const WorkCard = ({work}) => {
         </div>
 
         <div className='flex flex-col items-center justify-center w-full absolute top-[35%] max-w-[90%]'>
-            <p className='!text-[0.8rem] md:!text-[1rem] lg:!text-[1.2rem] !font-bold text-center'>
+            <p className='!text-[0.8rem] md:!text-[1rem] lg:!text-[1.1rem] !font-bold text-center'>
                 {work.title}
             </p>
         </div>

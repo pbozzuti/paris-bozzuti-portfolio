@@ -31,11 +31,11 @@ const page = () => {
   return (
     <main className='flex flex-col w-full px-[5%] pt-[16dvh] lg:pt-[18dvh] overflow-none mb-5'>
 
-        <h1 className='hidden lg:block !text-[5.5rem] font-antique mb-4'>
+        <h1 className='hidden lg:block !text-[3.5rem] font-antique mb-4'>
             Contact
         </h1>
 
-        <hr className='hidden lg:block w-[75px] border-2 m-0 mt-4 mb-8' />
+        <hr className='hidden lg:block w-[75px] border-1 m-0 mt-4 mb-8' />
 
         <div className='socials-links flex flex-col h-[45dvh] justify-between mb-[28dvh] lg:mb-0'>
 
@@ -46,14 +46,14 @@ const page = () => {
                         return (
                             <a href={p.url} target="_blank" className='flex gap-8 items-center lg:w-[50%]' key={i}>
                                 <img className='h-[5dvh]' src={p.icon} />
-                                <p className='text-[1.5rem] lg:text-[2rem] !p-0 !m-0'>{p.title}</p>
+                                <p className='text-[1.5rem] lg:text-[1.5rem] !p-0 !m-0'>{p.title}</p>
                             </a>
                         )
                     } else {
                         return (
                             <a href={p.url} download className='flex gap-8 items-center lg:w-[50%]' key={i}>
                                 <img className='h-[5dvh]' src={p.icon} />
-                                <p className='text-[1.5rem] lg:text-[2rem] !p-0 !m-0'>{p.title}</p>
+                                <p className='text-[1.5rem] lg:text-[1.5rem] !p-0 !m-0'>{p.title}</p>
                             </a>
                         )
                     }
