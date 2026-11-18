@@ -12,6 +12,13 @@
         "caption": "Mixed & Produced by me, written by Thea.",
         "thumbnail": "/images/whenuask.png",
         "link": "https://open.spotify.com/track/5J7tAwzu8UADVuWeeyBXk0?si=3bdad4d66fbf4e6f"
+    },
+    "plugin" : {
+        "title": "Satch Plug-in",
+        "year": "2026",
+        "caption": "Saturator plugin for Logic by me.",
+        "thumbnail": "/images/plugin.png",
+        "link": "https://github.com/pbozzuti/Satch"
     }
     
 }
