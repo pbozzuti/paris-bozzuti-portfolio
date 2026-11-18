@@ -22,19 +22,19 @@ const ParisBozzutiHeader = () => {
 
 
             <p className='text-[1.7rem]'>
-              recent Northwestern graduate in Data Science and Radio/Television/Film.
+              A recent Northwestern graduate in Data Science and Radio/Television/Film.
             </p>
 
             <hr className='w-[75px] border-1 m-0 block mt-4 mb-8' />
 
             <p className='text-[1.7rem]  '>
-                With a passion for analytics and data as well as creative design, I work at the intersection of digital technology and media to generate data-backed creative solutions to business problems, whether in product development, marketing or analytics.
+                Interested in technology and media, I work at the intersection of data and creative design to contribute to product development. 
             </p>
 
         </section>
 
         <p className='block lg:hidden text-center text-[1.1rem] md:text-[1.9rem]'>
-            Recent Northwestern graduate in Data Science and Radio/Television/Film.
+            A recent Northwestern graduate in Data Science and Radio/Television/Film.
         </p>
 
         <div className='paris-bozutti-headshot w-[80dvw] h-[80dvw] md:w-auto md:h-auto rounded-xl lg:rounded-none lg:w-[24dvw] lg:h-auto lg:max-w-1/3'
@@ -51,7 +51,7 @@ const ParisBozzutiHeader = () => {
         </div>
 
         <p className='block lg:hidden text-center text-[1.1rem] md:text-[1.9rem] mt-8'>
-            With a passion for analytics and data as well as creative design, I work at the intersection of digital technology and media to generate data-backed creative solutions to business problems, whether in product development, marketing or analytics.
+            Interested in technology and media, I work at the intersection of data and creative design to contribute to product development. 
         </p>
       
     </header>
