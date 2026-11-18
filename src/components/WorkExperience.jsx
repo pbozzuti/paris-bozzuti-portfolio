@@ -40,7 +40,7 @@ const WorkExperience = () => {
     <section className='flex flex-wrap justify-center gap-y-5 gap-[5%] md:gap-[2%] mb-[5%]'>
 
         {workExp.map((work, i) => (
-            <WorkCard work={work} key={i} />
+            <WorkCard work={work} index={i} key={i} />
         ))}
       
     </section>

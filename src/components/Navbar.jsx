@@ -27,6 +27,10 @@ const Navbar = () => {
             title : "Work"
         },
         {
+            path : '/play',
+            title : "Play"
+        },
+        {
             path : '/contact',
             title : "Contact"
         },
@@ -106,7 +110,7 @@ const Navbar = () => {
             <div className='site-links flex justify-center gap-24 w-full'>
 
                 {
-                    pages.slice(1, 4).map((p, i) => (
+                    pages.slice(1, 5).map((p, i) => (
                         <Link href={p.path} className='font-gambarino text-xl m-0 transition-all duration-300 ease-in-out hover:scale-[1.05]' key={i}
                             style={{
                                 fontWeight : pathname === p.path ? "bold" : "normal"
@@ -134,11 +138,11 @@ const Navbar = () => {
                 {/* above holds the actual menu icon and her name  */}
                 
                 <div className='absolute pt-[1%] top-0 left-0 h-full flex items-center justify-center w-[18%] md:w-[20%]'>
-                    <Hamburger direction='right' color='#171717' duration={0.4} ease="easeIn" size={35} toggled={mobileMenuOpen} toggle={setMobileMenuOpen} />
+                    <Hamburger direction='right' color='#171717' duration={0.4} ease="easeIn" size={25} toggled={mobileMenuOpen} toggle={setMobileMenuOpen} />
                 </div>
 
                 <Link href={pageName === "Project" ? "/work" : "/"} className=' w-full p-0 m-0'>
-                    <h1 className={'!text-[2.3rem] md:!text-[3.2rem] font-antique text-center'}>{pageName}</h1>
+                    <h1 className={'!text-[1.5rem] md:!text-[1.8rem] font-antique text-center'}>{pageName}</h1>
                 </Link>
 
             </div>

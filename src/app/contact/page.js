@@ -31,7 +31,7 @@ const page = () => {
   return (
     <main className='flex flex-col w-full px-[5%] pt-[16dvh] lg:pt-[18dvh] overflow-none mb-5'>
 
-        <h1 className='hidden lg:block !text-[3.5rem] font-antique mb-4'>
+        <h1 className='font-antique !text-[1.8rem] md:!text-[2.0rem] lg:!text-[2.0rem] text-center lg:text-left mb-[5%] lg:mb-0'>
             Contact
         </h1>
 

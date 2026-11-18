@@ -7,7 +7,7 @@ const page = () => {
         {/* the main container -- row for desktop, col for mobile */}
 
         <section className='about-me-copy h-full hidden lg:flex flex-col w-1/2'>
-            <h1 className='font-antique !text-[3rem]'>
+            <h1 className='font-antique !text-[1.8rem] md:!text-[2.0rem] lg:!text-[2.0rem] text-center lg:text-left mb-[5%] lg:mb-0'>
                 About Me
             </h1>
 
