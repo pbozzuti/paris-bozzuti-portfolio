@@ -1,0 +1,17 @@
+{
+    "ep" : {
+        "title": "Something to Save: EP",
+        "year": "2023",
+        "caption": "Written, produced, mixed by me.",
+        "thumbnail": "/images/EPCOVER.png",
+        "link": "https://open.spotify.com/album/3ay2ZK6N2i8DSYEb1SjMA5?si=k0tju0ZtQ4G6KD2rFD-C4Q"
+    },
+    "single" : {
+        "title": "When You Ask by Thea",
+        "year": "2023",
+        "caption": "Mixed & Produced by me, written by Thea.",
+        "thumbnail": "/images/whenuask.png",
+        "link": "https://open.spotify.com/track/5J7tAwzu8UADVuWeeyBXk0?si=3bdad4d66fbf4e6f"
+    }
+    
+}

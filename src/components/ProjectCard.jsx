@@ -4,25 +4,36 @@ import React from 'react'
 import { NOTCH, BORDER, notchPath } from './WorkCard'
 
 // same layout as WorkCard: title, framed image, dotted line, small gray caption
-// fullWidth: fill the parent (used in the "View all" grid) instead of the fixed carousel width
-const ProjectCard = ({project, projId, fullWidth = false}) => {
+// fullWidth: fill the parent (used in grids) instead of the fixed carousel width
+// href: where a click goes. Left out → the project's /work page.
+//       A full "https://..." link opens in a new tab. null or "" → the card isn't clickable.
+// square: the image is a square and the card grows to fit it (instead of a fixed card height)
+const ProjectCard = ({project, projId, fullWidth = false, href, square = false}) => {
     const router = useRouter();
 
-    function navToProj() {
-        router.push(`/work/${projId}`);
+    const target = href === undefined ? `/work/${projId}` : href;
+
+    function handleClick() {
+        if (!target) return;
+        if (/^https?:\/\//.test(target)) {
+            window.open(target, '_blank', 'noopener,noreferrer');
+        } else {
+            router.push(target);
+        }
     }
 
     const noImage = project.thumbnail === "/vectors/no-image.svg";
 
   return (
     <div
-        className={`relative ${fullWidth ? 'w-full' : 'w-[35dvw] md:w-[23dvw] my-4'} h-[200px] lg:h-[30vh] lg:max-h-[230px] bg-gray-300 cursor-pointer hover:scale-[1.03] transition-transform duration-200 ease-in`}
-        style={{clipPath: notchPath(NOTCH)}}
-        onClick={navToProj}
+        className={`relative ${fullWidth ? 'w-full' : 'w-[35dvw] md:w-[23dvw] my-4'} ${square ? '' : 'h-[200px] lg:h-[30vh] lg:max-h-[230px]'} bg-gray-300 ${target ? 'cursor-pointer hover:scale-[1.03] transition-transform duration-200 ease-in' : ''}`}
+        style={{clipPath: notchPath(NOTCH), ...(square && {padding: `${BORDER}px`})}}
+        onClick={handleClick}
     >
+        {/* fixed-height cards pin the inside to the outline; square cards let the inside set the height */}
         <div
-            className='absolute overflow-hidden flex flex-col bg-white'
-            style={{inset: `${BORDER}px`, clipPath: notchPath(NOTCH - BORDER)}}
+            className={`${square ? 'relative' : 'absolute'} overflow-hidden flex flex-col bg-white`}
+            style={{...(!square && {inset: `${BORDER}px`}), clipPath: notchPath(NOTCH - BORDER)}}
         >
 
             <div className='flex flex-col items-center justify-center w-full px-[6%] pt-[6%] pb-[4%]'>
@@ -33,7 +44,7 @@ const ProjectCard = ({project, projId, fullWidth = false}) => {
             </div>
 
             {/* photo fills the whole frame, cropped to fit */}
-            <div className='flex items-center justify-center w-full flex-1 min-h-0 bg-gray-50 overflow-hidden'>
+            <div className={`flex items-center justify-center w-full ${square ? 'aspect-square' : 'flex-1 min-h-0'} bg-gray-50 overflow-hidden`}>
                 <img
                     src={project.thumbnail}
                     alt={`${project.title} Thumbnail`}
@@ -44,6 +55,13 @@ const ProjectCard = ({project, projId, fullWidth = false}) => {
             <div className='flex items-center w-full px-2 pt-[3%]'>
                 <span className='flex-1 border-t-2 border-dotted border-gray-300' />
             </div>
+
+            {/* optional caption (e.g. from play.json), only shown when there is one */}
+            {project.caption && (
+                <p className='!text-[0.7rem] md:!text-[0.85rem] text-center !mb-0 px-[6%] pt-[3%] leading-snug'>
+                    {project.caption}
+                </p>
+            )}
 
             <div className='flex items-center justify-center w-full px-[6%] pt-[3%] pb-[5%]'>
                 {/* year from projects.json; the non-breaking space keeps the line's height when it's blank */}
