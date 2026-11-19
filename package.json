@@ -6,11 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "fitbit:auth": "node --env-file=.env.local scripts/fitbit-auth.mjs"
   },
   "dependencies": {
     "@babel/helper-compilation-targets": "^7.27.2",
     "@radix-ui/react-slot": "^1.2.3",
+    "@upstash/redis": "^1.41.0",
     "axios": "^1.11.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",

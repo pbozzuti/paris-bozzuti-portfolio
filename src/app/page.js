@@ -1,6 +1,7 @@
 import HomeSkills from "../components/HomeSkills";
 import ParisBozzutiHeader from "../components/ParisBozzutiHeader";
 import LastCommit from "../components/LastCommit";
+import FitbitWidget from "../components/FitbitWidget";
 
 
 export default function Home() {
@@ -14,7 +15,9 @@ export default function Home() {
 
       
       <LastCommit />
-      
+
+      <FitbitWidget />
+
     </main>
   );
 }
