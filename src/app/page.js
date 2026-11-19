@@ -14,9 +14,11 @@ export default function Home() {
       <HomeSkills />
 
       
-      <LastCommit />
-
-      <FitbitWidget />
+      {/* stacked on mobile, side by side on desktop */}
+      <div className="w-full flex flex-col lg:flex-row lg:items-stretch items-center justify-center gap-4">
+        <LastCommit />
+        <FitbitWidget />
+      </div>
 
     </main>
   );

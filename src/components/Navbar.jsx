@@ -47,7 +47,7 @@ const Navbar = () => {
     const {scrollY } = useScroll();
 
     const navHeight = useTransform(scrollY, [0, 200], ['115px', '60px']);
-    const navWidth = useTransform(scrollY, [0, 200], ['100%', '40%']);
+    const navWidth = useTransform(scrollY, [0, 200], ['100%', '50%']);
     const navBorderRadius = useTransform(scrollY, [0, 200], ['0px', '15px']);
     const navBorderColor = useTransform(scrollY, [0, 200], ["#374151", "#9CA3AF"]);
     const navPosition = useTransform(scrollY, [0, 200], ['static', 'fixed']);
@@ -75,6 +75,8 @@ const Navbar = () => {
             style={{
                 height : navHeight,
                 width : navWidth,
+                // keeps the shrunk bar wide enough for the links + home icon on smaller laptop screens
+                minWidth : '760px',
                 borderRadius: navBorderRadius,
                 position : navPosition,
                 padding : navPadding,
@@ -107,7 +109,8 @@ const Navbar = () => {
             </motion.div>
             
 
-            <div className='site-links flex justify-center gap-24 w-full'>
+            {/* px reserves room for the home icon on the left (mirrored on the right so links stay centered) */}
+            <div className='site-links flex justify-center gap-24 w-full px-[64px]'>
 
                 {
                     pages.slice(1, 5).map((p, i) => (

@@ -1,6 +1,7 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 import { ThreeDot } from 'react-loading-indicators';
+import { NOTCH, BORDER, notchPath } from './WorkCard'
 
 const FitbitWidget = () => {
 
@@ -24,7 +25,15 @@ const FitbitWidget = () => {
     if (failed) return null;
 
     return (
-        <div className='w-full max-w-[500px] mt-4 px-6 py-4 bg-gray-100 border border-gray-200 rounded-lg shadow-lg flex items-center gap-4'>
+        // notched outline like the work/project cards: gray outer shape, white inner shape inset by BORDER
+        <div
+            className='w-full max-w-[420px] bg-gray-300'
+            style={{padding: `${BORDER}px`, clipPath: notchPath(NOTCH)}}
+        >
+        <div
+            className='h-full px-6 py-4 bg-white flex items-center gap-4'
+            style={{clipPath: notchPath(NOTCH - BORDER)}}
+        >
             {/* footprints icon */}
             <svg className='h-[2.5rem] w-[2.5rem] flex-none' viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z" />
@@ -44,6 +53,7 @@ const FitbitWidget = () => {
                     <ThreeDot color="#6B7280" size="small" text="" textColor="" />
                 )}
             </div>
+        </div>
         </div>
     )
 }

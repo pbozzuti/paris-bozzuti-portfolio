@@ -1,4 +1,5 @@
 import React from 'react'
+import { NOTCH, BORDER, notchPath } from './WorkCard'
 
 const GITHUB_USERNAME = "pbozzuti";
 
@@ -48,17 +49,24 @@ const LastCommit = async () => {
     if (!commit) return null;
 
     return (
+        // notched outline like the work/project cards: gray outer shape, white inner shape inset by BORDER
         <a
             href={commit.url}
             target="_blank"
-            className='w-full max-w-[500px] px-6 py-4 bg-gray-100 border border-gray-200 rounded-lg shadow-lg flex items-center gap-4 hover:scale-[1.02] transition-all duration-200 ease-in'
+            className='group w-full max-w-[420px] bg-gray-300 hover:scale-[1.02] transition-all duration-200 ease-in'
+            style={{padding: `${BORDER}px`, clipPath: notchPath(NOTCH)}}
         >
-            <img className='h-[2.5rem] flex-none' src="/vectors/github.svg" alt="GitHub" />
+            <div
+                className='h-full px-6 py-4 bg-white group-hover:bg-gray-50 transition-colors duration-200 flex items-center gap-4'
+                style={{clipPath: notchPath(NOTCH - BORDER)}}
+            >
+                <img className='h-[2.5rem] flex-none' src="/vectors/github.svg" alt="GitHub" />
 
-            <div className='flex flex-col gap-1'>
-                <p className='!font-[600] !text-[1.0rem] !m-0'>What I've been working on:</p>
-                <p className='!font-[600]  text-gray-500 !text-[1.0rem] !m-0'>{commit.repo}</p>
-                <p className='!text-[0.85rem] text-gray-500 !m-0'>{commit.message} · {new Date(commit.date).toLocaleDateString()} · {new Date(commit.date).toLocaleTimeString()}</p>
+                <div className='flex flex-col gap-1'>
+                    <p className='!font-[600] !text-[1.0rem] !m-0'>What I've been working on:</p>
+                    <p className='!font-[600]  text-gray-500 !text-[1.0rem] !m-0'>{commit.repo}</p>
+                    <p className='!text-[0.85rem] text-gray-500 !m-0'>{commit.message} · {new Date(commit.date).toLocaleDateString()} · {new Date(commit.date).toLocaleTimeString()}</p>
+                </div>
             </div>
         </a>
     )
