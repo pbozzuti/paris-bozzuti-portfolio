@@ -1,7 +1,7 @@
 {
     "battery_finder" : {
         "title": "Battery Finder App",
-        "year": "",
+        "year": "2025",
         "description": [
             "As a product management intern at Publicis Sapient, I spent a summer leading a team of software engineers through the development and deployment of a mobile-first web app for a confidential client.",
             "After completing market and product research, I guided the team through feature development and implementation, worked on Figma UX designs, and tracked progress on tools like Jira and Confluence.",
@@ -17,7 +17,7 @@
     },
     "task_manager" : {
         "title": "Theater Company Task Manager",
-        "year": "",
+        "year": "2026",
         "description": [
             "https://github.com/pbozzuti/Project-Manager",
             "A work in progress: Creating a task management system for Adams Theater Company to manage deadlines, responsibilities for various team members and projects, and budgets. The system features task status tracking, budget and purchase tracking, a grant-finding web-scraper and a social media analytics dashboard. The project is designed to suit 1-10 users without a technical background, so the focus is on functionality and an intuitive UI."
@@ -31,7 +31,7 @@
     },
     "med-imaging" : {
         "title": "Deep Learning Medical Imaging Prediction",
-        "year": "",
+        "year": "2026",
         "description": [
             "https://github.com/arvindkrishna87/STAT390_Winter2026/tree/master/Team5",
             "Working with real healthcare stakeholders, I developed deep learning models to identify the severity of potential eye cancer through analysis of medical imaging stains. My particular focus area was utilizing Optuna Hyperparameter Tuning to optimize the model's performance and speed. This involved the optimization of the entire end-to-end data pipeline and training process, as well as creating performance analysis visualizations to identify bottlenecks and areas for improvement. Over the course of ten weeks, I completed five presentations regarding the progress of the research and recommendations for stakeholders."
@@ -45,7 +45,7 @@
     },
     "ai-classifier" : {
         "title": "AI-Generated Image Classifier",
-        "year": "",
+        "year": "2025",
         "description": [
             "https://github.com/pbozzuti/stat362-fa25-final-ai-image-detection/tree/main",
             "I created an end-to-end data pipeline with Python to classify over 80,000 images as either AI or human-generated with 97% accuracy. I utilized various machine learning algorithms to achieve this performance and created visualizations to communicate findings and improve the model performance. In less technical terms, I trained a model on thousands of images to learn what qualities in each layer of an image can identify if it was human-generated or AI-generated. The technical specifics of the model isa MobileNetV2 CNN (a lightweight but effective convolutional neural network) with L2 regularization, Batch Normalization, Dropout, and an Adam Optimizer."
@@ -60,7 +60,7 @@
     },
     "diamond_bid_creator" : {
         "title" : "Diamond Bid Creator",
-        "year": "",
+        "year": "2024",
         "description" : [
             "This project uses Python and various machine learning models to analyze diamond qualities and their selling prices to optimize creating bids on luxury items.", 
             "Packages Used: Pandas, NumPy, Matplotlib, Seaborn, Sklearn, XGBoost, LightGBM Models Used: XGBoost, GridSearchCV, RandomizedSearchCV, DecisionTree, AdaBoost, GradientBoost, LightGBM, Ridge, Lasso, RandomizedSearch, KFold.", 
@@ -74,7 +74,7 @@
     },
     "adams_theater_co" : {
         "title" : "Adams Theater Company Website",
-        "year": "",
+        "year": "2025",
         "description" : [
             "https://www.adamstheatrecompany.com/home", 
             "As a Producer and Co-Founder of Adams Theatre Company, I developed a new website for our non-profit to increase engagement with local audiences and artists. Our company produces theatrical shows every year and needs to have a strong digital presence to grow and maintain strong relationships with our partners.", 
@@ -88,7 +88,7 @@
     },
     "interactive_data_viz" : {
         "title": "Interactive Data Viz",
-        "year": "",
+        "year": "2024",
         "description": [
             "https://majoo8-paris-bozzuti.shinyapps.io/Bozzuti_Paris_Final_Submission/",
             "Created in a data visualization course at Northwestern, I worked with MLB batting data to analyze 4 Mets legends batting abilities and visualize them in dynamic displays on a shiny app. Using SQL and Python for data cleaning and exploratory analysis, I worked to find trends among data points over 60 years of data.",
@@ -102,7 +102,7 @@
     },
     "ngn2-research" : {
         "title": "Research: Knight Lab Studio",
-        "year": "",
+        "year": "2026",
         "description": [
             "Research done with the Knight Lab Studio to explore the way Gen Z interacts with Digital News platforms. Using complex Network Analysis, machine learning, and natural language processing, I analyzed qualitative data from interviews across 5 countries to find trends in news interactions and create user personas. This research involved using sentence-transformers, HuggingFace models, UMAP, and HDBSCAN to analyze the data and create visualizations of the results. The final findings and visualizations were presented to the Knight Lab Studio and used to inform their future research paper for the Harvard Data Science Review."
         ],

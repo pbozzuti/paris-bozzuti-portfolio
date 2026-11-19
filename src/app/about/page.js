@@ -42,7 +42,7 @@ const page = () => {
 
         <div className='flex flex-col gap-6 w-full lg:hidden'>
 
-            <p className='text-[1.1rem] md:text-[1.9rem] text-center !mb-0'>
+            <p className='text-[0.9rem] md:text-[1.3rem] text-center !mb-0'>
                     Hello! I&apos;m Paris, a recent Northwestern graduate born in New Jersey.
             </p>
 
@@ -52,13 +52,13 @@ const page = () => {
                 <img className='h-full object-fit lg:w-full shadow-lg rounded-lg' src="images/bozzuti-in-action.png" alt="Paris Bozzuti working hard with her team" />
             </section>
 
-            <p className='text-[1.1rem] md:text-[1.9rem] !leading-[1.4]'>
+            <p className='text-[0.9rem] md:text-[1.3rem] !leading-[1.4]'>
                     My background is in technical product management and marketing, which  has given me an entrepreneurial spirit, a strong statistical foundation, and a keen eye for storytelling. All in all, I am a problem solver who uses both creative and technical skills to build innovative business solutions. I work best in teams, bringing leadership skills to build a project with others.
             </p>
 
             <ListeningTo />
 
-            <p className='text-[1.1rem] md:text-[1.9rem] !leading-[1.4]'>
+            <p className='text-[0.9rem] md:text-[1.3rem] !leading-[1.4]'>
                 Outside of work, I am a co-founder of a non-profit theater company, a huge Mets fan, and an amateur robotics enthusiast. I spend my free time playing guitar and watching Vanderpump Rules.
             </p>
 
