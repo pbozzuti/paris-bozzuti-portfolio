@@ -60,7 +60,7 @@ const LastCommit = async () => {
                 className='h-full px-6 py-4 bg-white group-hover:bg-gray-50 transition-colors duration-200 flex items-center gap-4'
                 style={{clipPath: notchPath(NOTCH - BORDER)}}
             >
-                <img className='h-[2.5rem] flex-none' src="/vectors/github.svg" alt="GitHub" />
+                <img className='h-[2.5rem] flex-none dark:invert' src="/vectors/github.svg" alt="GitHub" />
 
                 <div className='flex flex-col gap-1'>
                     <p className='!font-[600] !text-[1.0rem] !m-0'>What I've been working on:</p>

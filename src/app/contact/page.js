@@ -45,14 +45,14 @@ const page = () => {
                     if (p.title !== "Download Resume") {
                         return (
                             <a href={p.url} target="_blank" className='flex gap-8 items-center lg:w-[50%]' key={i}>
-                                <img className='h-[5dvh]' src={p.icon} />
+                                <img className='h-[5dvh] dark:invert' src={p.icon} />
                                 <p className='text-[1.5rem] lg:text-[1.5rem] !p-0 !m-0'>{p.title}</p>
                             </a>
                         )
                     } else {
                         return (
                             <a href={p.url} download className='flex gap-8 items-center lg:w-[50%]' key={i}>
-                                <img className='h-[5dvh]' src={p.icon} />
+                                <img className='h-[5dvh] dark:invert' src={p.icon} />
                                 <p className='text-[1.5rem] lg:text-[1.5rem] !p-0 !m-0'>{p.title}</p>
                             </a>
                         )

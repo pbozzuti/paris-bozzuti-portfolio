@@ -48,7 +48,7 @@ const HomeSkills = () => {
         <Marquee className="overflow-visible h-[75px] lg:py-2"
             pauseOnHover={true}
             gradient={true}
-            gradientColor="#ffffff"
+            gradientColor="var(--background)"
             gradientWidth="50px"
         >
 

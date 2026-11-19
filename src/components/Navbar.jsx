@@ -6,6 +6,7 @@ import React, { useState } from 'react'
 import { motion, useScroll, useTransform} from 'framer-motion'
 import Hamburger from 'hamburger-react'
 import projects from "@/data/projects.json"
+import ThemeToggle from './ThemeToggle'
 
 const Navbar = () => {
 
@@ -84,8 +85,8 @@ const Navbar = () => {
                 left : '50%',
                 transform : 'translateX(-50%)',
                 boxShadow : navBoxShadow,
-                backgroundColor : '#ffffff',
-                border : `1px solid #ddd`,
+                backgroundColor : 'var(--color-white)',
+                border : '1px solid var(--color-gray-300)',
                 zIndex : 50
             }}
             transition={{type : "spring", stiffness: 200, damping : 30}}
@@ -124,9 +125,13 @@ const Navbar = () => {
                     ))
                 }
 
-                
+
             </div>
-        
+
+            <motion.div className='absolute' style={{ top : houseTop, right : houseLeft }}>
+                <ThemeToggle />
+            </motion.div>
+
         </motion.nav>
 
         <motion.nav className='mobile-and-ipad-navbar flex flex-col items-center justify-start lg:hidden fixed top-0 left-0 w-full overflow-hidden bg-app_white bg-white border-b border-gray-400 z-10 shadow-md'
@@ -141,12 +146,16 @@ const Navbar = () => {
                 {/* above holds the actual menu icon and her name  */}
                 
                 <div className='absolute pt-[1%] top-0 left-0 h-full flex items-center justify-center w-[18%] md:w-[20%]'>
-                    <Hamburger direction='right' color='#171717' duration={0.4} ease="easeIn" size={25} toggled={mobileMenuOpen} toggle={setMobileMenuOpen} />
+                    <Hamburger direction='right' color='var(--foreground)' duration={0.4} ease="easeIn" size={25} toggled={mobileMenuOpen} toggle={setMobileMenuOpen} />
                 </div>
 
                 <Link href={pageName === "Project" ? "/work" : "/"} className=' w-full p-0 m-0'>
                     <h1 className={'!text-[1.5rem] md:!text-[1.8rem] font-antique text-center'}>{pageName}</h1>
                 </Link>
+
+                <div className='absolute top-0 right-0 h-full flex items-center justify-center w-[18%] md:w-[20%]'>
+                    <ThemeToggle />
+                </div>
 
             </div>
 

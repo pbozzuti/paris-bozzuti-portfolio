@@ -31,9 +31,23 @@ export const metadata = {
   }
 };
 
+// Runs before paint so the saved/system theme is applied without a light-mode flash.
+const themeScript = `(function(){try{
+  var m = window.matchMedia('(prefers-color-scheme: dark)');
+  var apply = function(){
+    var t = localStorage.getItem('theme');
+    document.documentElement.classList.toggle('dark', t ? t === 'dark' : m.matches);
+  };
+  apply();
+  m.addEventListener('change', function(){ if (!localStorage.getItem('theme')) apply(); });
+}catch(e){}})();`;
+
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
       <body
         className={`${satoshi.variable} ${zodiak.variable} antialiased`}
       >
