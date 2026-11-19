@@ -1,4 +1,11 @@
 {
+    "bandcamp" : {
+        "title": "Bandcamp",
+        "year": "2026",
+        "caption": "Demos written, produced, and mixed by me.",
+        "thumbnail": "/images/cover-copy.png",
+        "link": "https://parisbozzuti.bandcamp.com/"
+    },
     "ep" : {
         "title": "Something to Save: EP",
         "year": "2023",
