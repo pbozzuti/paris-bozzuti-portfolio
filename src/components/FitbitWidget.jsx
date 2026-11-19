@@ -23,8 +23,6 @@ const FitbitWidget = () => {
 
     if (failed) return null;
 
-    const progress = data?.goal ? Math.min(data.steps / data.goal, 1) : null;
-
     return (
         <div className='w-full max-w-[500px] mt-4 px-6 py-4 bg-gray-100 border border-gray-200 rounded-lg shadow-lg flex items-center gap-4'>
             {/* footprints icon */}
@@ -39,21 +37,9 @@ const FitbitWidget = () => {
                 <p className='!font-[600] !text-[1.0rem] !m-0'>Steps today:</p>
 
                 {data ? (
-                    <>
-                        <p className='!font-[600] text-gray-500 !text-[1.0rem] !m-0'>
-                            {data.steps.toLocaleString()}
-                            {data.goal ? <span className='!font-[400]'> / {data.goal.toLocaleString()}</span> : null}
-                        </p>
-
-                        {progress !== null && (
-                            <div className='w-full h-[6px] bg-gray-200 rounded-full overflow-hidden'>
-                                <div
-                                    className='h-full bg-gray-500 rounded-full transition-all duration-700 ease-out'
-                                    style={{ width: `${progress * 100}%` }}
-                                />
-                            </div>
-                        )}
-                    </>
+                    <p className='!font-[600] text-gray-500 !text-[1.0rem] !m-0'>
+                        {data.steps.toLocaleString()}
+                    </p>
                 ) : (
                     <ThreeDot color="#6B7280" size="small" text="" textColor="" />
                 )}
