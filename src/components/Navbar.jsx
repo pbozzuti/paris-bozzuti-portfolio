@@ -111,7 +111,7 @@ const Navbar = () => {
 
                 {
                     pages.slice(1, 5).map((p, i) => (
-                        <Link href={p.path} className='font-gambarino text-xl m-0 transition-all duration-300 ease-in-out hover:scale-[1.05]' key={i}
+                        <Link href={p.path} className='font-zodiak text-xl m-0 transition-all duration-300 ease-in-out hover:scale-[1.05]' key={i}
                             style={{
                                 fontWeight : pathname === p.path ? "bold" : "normal"
                             }}
@@ -154,7 +154,7 @@ const Navbar = () => {
 
                     {pages.map((p, i) => {
                         if (p.path !== pathname && p.title !== "Skills") {
-                            return (<Link href={p.path} className='font-gambarino !text-lg md:!text-3xl m-0 p-0 text-app_black text-center' key={i} onClick={() => setMobileMenuOpen(false)}
+                            return (<Link href={p.path} className='font-zodiak !text-lg md:!text-3xl m-0 p-0 text-app_black text-center' key={i} onClick={() => setMobileMenuOpen(false)}
                                 // style={{
                                 //     fontWeight : pathname === p.path ? "bold" : "normal"
                                 // }}

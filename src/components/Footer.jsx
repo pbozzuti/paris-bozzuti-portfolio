@@ -10,18 +10,18 @@ const Footer = () => {
 
 
 
-        <p className='font-gambarino !p-0 !m-0 '>
+        <p className='font-zodiak !p-0 !m-0 '>
             &copy; <strong>Paris Bozzuti</strong>, 2026
         </p>
 
 
         <div className='flex items-center justify-end gap-[10%] overflow-none '>
 
-            <Link href="/about" className="font-gambarino">
+            <Link href="/about" className="font-zodiak">
                 About
             </Link>
 
-            <Link href="/" className="font-gambarino">
+            <Link href="/" className="font-zodiak">
                 {/* <img className='object-fit h-full w-full' src='/vectors/house.svg' alt="Home Icon" /> */}
                 Home
             </Link>

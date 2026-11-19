@@ -13,11 +13,12 @@ const satoshi = localFont({
   display: 'swap',
 });
 
-// Heading font: Gambarino (regular only)
-const gambarino = localFont({
-  src: './fonts/Gambarino-Regular.woff2',
-  weight: '400',
-  style: 'normal',
+// Accent font: Zodiak (variable, weights 100–900)
+const zodiak = localFont({
+  src: [
+    { path: './fonts/Zodiak-Variable.woff2', weight: '100 900', style: 'normal' },
+    { path: './fonts/Zodiak-VariableItalic.woff2', weight: '100 900', style: 'italic' },
+  ],
   variable: '--font-antique',
   display: 'swap',
 });
@@ -34,7 +35,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${satoshi.variable} ${gambarino.variable} antialiased`}
+        className={`${satoshi.variable} ${zodiak.variable} antialiased`}
       >
         <Navbar />
         {children}
